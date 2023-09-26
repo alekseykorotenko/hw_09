@@ -10,7 +10,7 @@
     display: flex;
 
     .menu__logo {
-      padding: 34px 51px 33px;
+      padding: 34px 22px 33px 51px;
       .logo__item {
         width: 130px;
       }
@@ -20,10 +20,18 @@
       display: flex;
       font-size: 0.9375rem;
       line-height: 20px;
+      //   text-align: center;
 
       &__item {
-        display: block;
-        padding: 39px 42px 36px 0;
+        // display: flex;
+        padding: 39px 28px 36px 29px;
+      }
+
+      &__item:hover {
+        transform: scale(1.1);
+        transition: all 1s;
+        background-color: #e7e6e6;
+        border-radius: 0 0 10px 10px;
       }
 
       &__link {
@@ -31,25 +39,40 @@
       }
     }
   }
-  .buttons-wrap {
-    display: flex;
-    // width: 270px;
-    justify-content: space-between;
-    padding: 25px 51px;
-    .button {
-      background-color: $main-color;
-      line-height: 45px;
-      font-size: 1rem;
-      font-weight: 600;
-      padding: 1px 36px;
-      margin-left: 10px;
-      border: 1px solid rgba($color: #000, $alpha: 0.5);
-    }
-    .button--spec {
-      background-color: $special-color;
-      border: none;
-      color: $main-color;
-      padding: 0 22px 0 21px;
-    }
+}
+.buttons-wrap {
+  display: flex;
+  // width: 270px;
+  justify-content: space-between;
+  padding: 25px 51px;
+  .button {
+    background-color: $main-color;
+    line-height: 45px;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1px 36px;
+    margin-left: 10px;
+    border: 1px solid rgba($color: #000, $alpha: 0.5);
+  }
+  .button:hover {
+    transform: scale(1.1);
+    transition: all 1s;
+  }
+  .button--spec {
+    background-color: $special-color;
+    border: none;
+    color: $main-color;
+    padding: 0 22px 0 21px;
+  }
+
+  .button--mod {
+    background-color: $special-color;
+    border: none;
+    color: $main-color;
+    padding: 0 41px 0 42px;
+  }
+
+  .button--add {
+    padding: 1px 29px;
   }
 }
