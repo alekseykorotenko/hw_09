@@ -2,7 +2,7 @@
 
 .main {
   padding: 97px 55px 0;
-  .main-header {
+  .main-header-block {
     display: flex;
 
     .main-header__title {
@@ -35,5 +35,27 @@
     padding: 0 0 172px 20px;
     font-size: 0.9375rem;
     line-height: 25px;
+  }
+
+  .main-second-block {
+    position: absolute;
+    background-color: $uncommon-color;
+    width: 100vw;
+    left: 0;
+    text-align: center;
+
+    .main__title {
+      padding: 108px 250px 70px 360px;
+      font-size: 50px;
+      font-weight: 600;
+      line-height: 60px;
+    }
+
+    .main-second-img {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding-bottom: 104px;
+    }
   }
 }
