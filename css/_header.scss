@@ -1,11 +1,55 @@
+@import 'tools';
+
 .header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
 
   .nav {
     display: flex;
 
-    .menu-logo {
-      padding: 3px 3.5% 9px;
+    .menu__logo {
+      padding: 34px 51px 33px;
+      .logo__item {
+        width: 130px;
+      }
+    }
+
+    .menu {
+      display: flex;
+      font-size: 0.9375rem;
+      line-height: 20px;
+
+      &__item {
+        display: block;
+        padding: 39px 42px 36px 0;
+      }
+
+      &__link {
+        color: $additional-color;
+      }
+    }
+  }
+  .buttons-wrap {
+    display: flex;
+    // width: 270px;
+    justify-content: space-between;
+    padding: 25px 51px;
+    .button {
+      background-color: $main-color;
+      line-height: 45px;
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 1px 36px;
+      margin-left: 10px;
+      border: 1px solid rgba($color: #000, $alpha: 0.5);
+    }
+    .button--spec {
+      background-color: $special-color;
+      border: none;
+      color: $main-color;
+      padding: 0 22px 0 21px;
     }
   }
 }

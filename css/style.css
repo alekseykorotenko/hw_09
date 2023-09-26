@@ -25,10 +25,48 @@ ul {
 
 .header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
 }
 .header .nav {
   display: flex;
 }
-.header .nav .menu-logo {
-  padding: 3px 3.5% 9px;
+.header .nav .menu__logo {
+  padding: 34px 51px 33px;
+}
+.header .nav .menu__logo .logo__item {
+  width: 130px;
+}
+.header .nav .menu {
+  display: flex;
+  font-size: 0.9375rem;
+  line-height: 20px;
+}
+.header .nav .menu__item {
+  display: block;
+  padding: 39px 42px 36px 0;
+}
+.header .nav .menu__link {
+  color: #000;
+}
+.header .buttons-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 51px;
+}
+.header .buttons-wrap .button {
+  background-color: #fff;
+  line-height: 45px;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1px 36px;
+  margin-left: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.header .buttons-wrap .button--spec {
+  background-color: #ff6336;
+  border: none;
+  color: #fff;
+  padding: 0 22px 0 21px;
 }/*# sourceMappingURL=style.css.map */
