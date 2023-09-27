@@ -1,0 +1,123 @@
+.footer {
+  //   display: flex;
+  position: relative;
+  top: 450px;
+  background-color: #eee;
+
+  .footer__section {
+    display: flex;
+    flex-direction: column;
+    padding: 92px 75px 0;
+
+    .footer__block {
+      display: flex;
+      flex-direction: row;
+      color: $additional-color;
+      border-bottom: 1px solid $additional-color;
+
+      .footer__container {
+        padding-right: 70px;
+
+        .footer__title {
+          font-size: 2.5rem;
+          font-weight: 600;
+          line-height: 50px;
+          padding-bottom: 28px;
+        }
+
+        .footer__container__img {
+          display: block;
+          border: 1px solid #000;
+          // padding-right: ;
+        }
+        .footer__container__logo {
+          display: block;
+          padding-top: 31px;
+        }
+        .footer__container__text {
+          width: 290px;
+          font-size: 1.25rem;
+          line-height: 30px;
+          padding: 11px 0 15px;
+        }
+        .footer__container__button {
+          background-color: #eee;
+          font-size: 1.25rem;
+          font-weight: 600;
+          line-height: 30px;
+          padding-bottom: 95px;
+
+          &:hover {
+            text-decoration: underline;
+            transition: all 1s;
+          }
+        }
+      }
+    }
+
+    .footer__block--spec {
+      display: flex;
+      justify-content: space-between;
+
+      .footer__block__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 53px 700px 43px 0;
+
+        .footer__block__logo {
+          padding-right: 14px;
+        }
+
+        .footer__block__text {
+          width: 301px;
+          font-size: 0.75rem;
+          line-height: 15px;
+        }
+      }
+
+      .footer__block__container--spec {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    .footer__container--spec {
+      display: flex;
+      padding: 5px 20px 391px 70px;
+
+      .nav__title--spec {
+        padding-left: 32px;
+      }
+
+      .nav__menu {
+        padding: 21px 75px 0 0;
+        .nav__menu__item {
+          padding-bottom: 15px;
+
+          .nav__link {
+            color: $additional-color;
+            font-size: 0.9375rem;
+            line-height: 15px;
+            &:hover {
+              text-decoration: underline;
+              transition: all 1s;
+            }
+          }
+        }
+      }
+
+      .nav__menu--spec {
+        padding: 21px 17px 0 34px;
+      }
+
+      .nav__menu--mod {
+        padding: 21px 28px 0 34px;
+      }
+
+      .nav__menu--add {
+        padding: 21px 20px 0 34px;
+      }
+    }
+  }
+}
