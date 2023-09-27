@@ -5,3 +5,8 @@
   font-weight: $fw;
   line-height: $ln;
 }
+
+@mixin position($poz, $top) {
+  position: $poz;
+  top: $top;
+}

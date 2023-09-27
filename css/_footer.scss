@@ -1,7 +1,13 @@
+// Footer
+.footer__block,
+.nav__link {
+  color: $additional-color;
+}
+
 .footer {
-  //   display: flex;
   position: relative;
   top: 450px;
+  overflow: hidden;
   background-color: #eee;
 
   .footer__section {
@@ -12,39 +18,32 @@
     .footer__block {
       display: flex;
       flex-direction: row;
-      color: $additional-color;
       border-bottom: 1px solid $additional-color;
 
       .footer__container {
         padding-right: 70px;
 
         .footer__title {
-          font-size: 2.5rem;
-          font-weight: 600;
-          line-height: 50px;
+          @include font(2.5rem, 600, 50px);
           padding-bottom: 28px;
         }
 
         .footer__container__img {
           display: block;
-          border: 1px solid #000;
-          // padding-right: ;
+          border: 1px solid $additional-color;
         }
         .footer__container__logo {
           display: block;
           padding-top: 31px;
         }
         .footer__container__text {
+          @include font(1.25rem, 400, 30px);
           width: 290px;
-          font-size: 1.25rem;
-          line-height: 30px;
           padding: 11px 0 15px;
         }
         .footer__container__button {
+          @include font(1.25rem, 600, 30px);
           background-color: #eee;
-          font-size: 1.25rem;
-          font-weight: 600;
-          line-height: 30px;
           padding-bottom: 95px;
 
           &:hover {
@@ -70,9 +69,8 @@
         }
 
         .footer__block__text {
+          @include font(0.75rem, 400, 15px);
           width: 301px;
-          font-size: 0.75rem;
-          line-height: 15px;
         }
       }
 
@@ -96,9 +94,7 @@
           padding-bottom: 15px;
 
           .nav__link {
-            color: $additional-color;
-            font-size: 0.9375rem;
-            line-height: 15px;
+            @include font(0.9375rem, 400, 15px);
             &:hover {
               text-decoration: underline;
               transition: all 1s;

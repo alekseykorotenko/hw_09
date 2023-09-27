@@ -1,9 +1,36 @@
+// Imports
 @import 'tools';
 @import 'mixins';
 
+// Main colors group
+.main-second-block,
+.main-ninth-block {
+  background-color: $uncommon-color;
+}
+
+.main__title,
+.main__text,
+.main__link,
+.container__word,
+.fifth-block__link,
+.ninth-block__title {
+  color: $additional-color;
+}
+
+.wrap-container,
+.main-fourth-block {
+  background-color: $secondary-color;
+}
+
+.eighth-block__button,
+.ninth-block__button {
+  color: $main-color;
+}
+
+// Main
+
 .main {
   padding: 97px 55px 0;
-
   .main-first-block {
     display: flex;
 
@@ -14,10 +41,7 @@
 
     .content-about {
       padding: 0 68px 51px 20px;
-      @include font(4.0625rem, 600, 70px);
-      font-size: 1.5625rem;
-      font-weight: 400;
-      line-height: 35px;
+      @include font(1.5625rem, 400, 35px);
     }
 
     .main-first__picture {
@@ -31,25 +55,25 @@
     padding-bottom: 25px;
   }
 
+  .sixth-block__text,
+  .seventh-block__signature,
+  .content-warn {
+    @include font(0.9375rem, 400, 25px);
+  }
+
   .content-warn {
     display: block;
     padding: 0 0 172px 20px;
-    font-size: 0.9375rem;
-    line-height: 25px;
   }
 
   .main-second-block {
     position: absolute;
-    background-color: $uncommon-color;
     width: 100vw;
     left: 0;
     text-align: center;
 
     .main__title {
       padding: 108px 250px 70px 360px;
-      font-size: 50px;
-      font-weight: 600;
-      line-height: 60px;
     }
 
     .main-second-img {
@@ -60,10 +84,14 @@
     }
   }
 
+  .main__title,
+  .main-fourth__title,
+  .main-fifth__title {
+    @include font(3.125rem, 600, 60px);
+  }
+
   .main-third-block {
-    // display: flex;
-    position: relative;
-    top: 455px;
+    @include position(relative, 455px);
 
     .third-block__container {
       display: flex;
@@ -75,17 +103,10 @@
         padding-right: 165px;
 
         .main__title {
-          color: $additional-color;
-          font-size: 3.125rem;
-          font-weight: 600;
-          line-height: 60px;
           padding-bottom: 30px;
         }
 
         .main__text {
-          color: $additional-color;
-          font-size: 1.25rem;
-          line-height: 30px;
           padding-bottom: 30px;
 
           .article__span {
@@ -95,10 +116,7 @@
 
         .main__link {
           text-decoration: none;
-          font-size: 20px;
-          font-weight: 600;
-          color: $additional-color;
-          line-height: 30px;
+          @include font(1.25rem, 600, 30px);
           &:hover {
             text-decoration: underline;
             transition: all 1s;
@@ -131,12 +149,11 @@
         align-items: center;
         width: 2326.6px;
         height: 577px;
-        background-color: $secondary-color;
 
         .wrap-content {
           width: 500px;
           height: 260px;
-          background-color: #fff;
+          background-color: $main-color;
 
           .container__variable {
             display: inline-block;
@@ -192,10 +209,6 @@
             padding-left: 8px;
           }
 
-          .container__word {
-            color: $additional-color;
-          }
-
           .container__way {
             color: $way-color;
             padding-right: 30px;
@@ -236,18 +249,21 @@
     }
   }
 
+  .main-fourth-block,
+  .main-fifth-block,
+  .main-sixth-block,
+  .main-seventh-block,
+  .main-eighth-block,
+  .main-ninth-block {
+    @include position(relative, 455px);
+  }
+
   .main-fourth-block {
-    position: relative;
-    top: 450px;
     left: -55px;
     width: 100vw;
-    background-color: $secondary-color;
     text-align: center;
 
     .main-fourth__title {
-      font-size: 3.125rem;
-      font-weight: 600;
-      line-height: 60px;
       padding: 120px 220px 79px;
     }
 
@@ -264,14 +280,12 @@
         }
 
         .fourth-block__title {
-          font-size: 1.5625rem;
-          font-weight: 600px;
-          line-height: 35px;
+          @include font(1.5625rem, 600, 35px);
           padding-bottom: 25px;
         }
 
         .fourth-block__text {
-          font-size: 1.125rem;
+          @include font(1.125rem, 400, 25px);
           padding-bottom: 54px;
         }
       }
@@ -282,16 +296,11 @@
     }
   }
   .main-fifth-block {
-    position: relative;
-    top: 450px;
     text-align: center;
     padding-bottom: 217px;
 
     .main-fifth__title {
       padding: 154px 23px 0px 20px;
-      font-size: 3.125rem;
-      font-weight: 600;
-      line-height: 60px;
     }
 
     .fifth-wrap {
@@ -311,46 +320,40 @@
         padding-bottom: 58px;
       }
       .fifth-block__title {
-        font-size: 1.875rem;
-        font-weight: 600;
-        line-height: 40px;
+        @include font(1.875rem, 600, 40px);
         padding-bottom: 34px;
       }
 
       .fifth-block__text {
-        font-size: 1.25rem;
-        line-height: 30px;
         padding-right: 31px;
         padding-bottom: 25px;
       }
 
       .fifth-block__link {
-        font-size: 1.25rem;
         text-decoration: underline;
-        line-height: 30px;
-        color: $additional-color;
-        font-weight: 400;
       }
     }
+  }
+
+  .main__text,
+  .fifth-block__text,
+  .fifth-block__link,
+  .ninth-block__text {
+    @include font(1.25rem, 400, 30px);
   }
 
   .main-sixth-block {
     display: flex;
     width: 100vw;
     background-color: #c9e8f2;
-    position: relative;
-    top: 450px;
     left: -55px;
 
     .sixth-block__article {
       padding: 63px 60px 23px 75px;
-      font-size: 1.875rem;
-      line-height: 40px;
+      @include font(1.875rem, 400, 40px);
     }
 
     .sixth-block__text {
-      font-size: 0.9375rem;
-      line-height: 25px;
       padding: 0 709px 7px 75px;
     }
 
@@ -369,8 +372,6 @@
   .main-seventh-block {
     display: flex;
     justify-content: space-between;
-    position: relative;
-    top: 450px;
     left: -55px;
     width: 100vw;
     background-color: #dabc98;
@@ -384,10 +385,7 @@
       }
 
       .seventh-block__text {
-        font-size: 2.1875rem;
-        font-weight: 600;
-        line-height: 50px;
-        // width: 461px;
+        @include font(2.1875rem, 600, 50px);
         padding: 47px 125px 31px 0;
         border-right: 1px solid $additional-color;
       }
@@ -409,12 +407,15 @@
       }
 
       .seventh-block__signature {
-        font-size: 0.9375rem;
-        line-height: 25px;
         letter-spacing: 0.75px;
         text-transform: uppercase;
       }
     }
+  }
+
+  .ninth-block__title,
+  .eighth-block__title {
+    @include font(4.0625rem, 600, 75px);
   }
 
   .main-eighth-block {
@@ -422,22 +423,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
-    top: 450px;
     padding-bottom: 162px;
 
     .eighth-block__title {
       text-align: center;
       padding: 169px 250px 0;
-      font-size: 4.0625rem;
-      font-weight: 600;
-      line-height: 75px;
     }
 
     .eighth-block__text {
+      @include font(1.5625rem, 400, 30px);
       text-align: center;
-      font-size: 1.5625rem;
-      line-height: 30px;
       width: 539px;
     }
 
@@ -451,11 +446,8 @@
     }
 
     .eighth-block__button {
+      @include font(1rem, 600, 60px);
       text-align: center;
-      font-size: 1rem;
-      font-weight: 600;
-      line-height: 60px;
-      color: $main-color;
       background-color: $special-color;
       padding: 0 20px;
     }
@@ -471,34 +463,22 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
-    top: 450px;
     left: -55px;
     width: 100vw;
     text-align: center;
-    background-color: $uncommon-color;
     padding-bottom: 161px;
 
     .ninth-block__title {
-      font-size: 4.0625rem;
-      font-weight: 600;
-      line-height: 75px;
-      color: $additional-color;
       padding: 119px 328px 29px;
     }
 
     .ninth-block__text {
-      font-size: 1.25rem;
-      line-height: 30px;
       padding: 0 501px 54px;
     }
 
     .ninth-block__button {
+      @include font(1.0625rem, 600, 60px);
       text-align: center;
-      font-size: 1.0625rem;
-      font-weight: 600;
-      line-height: 60px;
-      color: $main-color;
       background-color: $additional-color;
       padding: 0 40px;
     }

@@ -14,6 +14,7 @@ html {
 
 body {
   font-size: 1rem;
+  font-family: 'Graphik LC Web', Helvetica, sans-serif;
 }
 
 a {
@@ -31,3 +32,19 @@ ul {
 @import 'tools';
 @import 'main';
 @import 'footer';
+@import 'mixins';
+
+//FONTS
+
+@font-face {
+  font-family: 'Graphik LC Web';
+  src: url('GraphikLCWeb-Medium.eot');
+  src: url('GraphikLCWeb-Medium.eot?#iefix') format('embedded-opentype'),
+    url('GraphikLCWeb-Medium.woff2') format('woff2'),
+    url('GraphikLCWeb-Medium.woff') format('woff'),
+    url('GraphikLCWeb-Medium.ttf') format('truetype'),
+    url('GraphikLCWeb-Medium.svg#GraphikLCWeb-Medium') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
