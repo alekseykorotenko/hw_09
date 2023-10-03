@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Graphik LC Web";
+  src: url("GraphikLCWeb-Medium.eot");
+  src: url("GraphikLCWeb-Medium.eot?#iefix") format("embedded-opentype"), url("GraphikLCWeb-Medium.woff2") format("woff2"), url("GraphikLCWeb-Medium.woff") format("woff"), url("GraphikLCWeb-Medium.ttf") format("truetype"), url("GraphikLCWeb-Medium.svg#GraphikLCWeb-Medium") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 * {
   margin: 0;
   padding: 0;
@@ -27,6 +35,7 @@ ul {
 .header {
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
   align-items: center;
   border-bottom: 1px solid #ccc;
 }
@@ -55,6 +64,7 @@ ul {
 }
 .header .nav .menu__link {
   color: #000;
+  cursor: pointer;
 }
 
 .buttons-wrap {
@@ -64,6 +74,7 @@ ul {
 }
 .buttons-wrap .button {
   background-color: #fff;
+  cursor: pointer;
   line-height: 45px;
   font-size: 1rem;
   font-weight: 600;
@@ -113,10 +124,12 @@ ul {
 .eighth-block__button,
 .ninth-block__button {
   color: #fff;
+  cursor: pointer;
 }
 
 .main {
   padding: 97px 55px 0;
+  overflow: hidden;
 }
 .main .main-first-block {
   display: flex;
@@ -176,8 +189,7 @@ ul {
   line-height: 60px;
 }
 .main .main-third-block {
-  position: relative;
-  top: 455px;
+  margin-top: 450px;
 }
 .main .main-third-block .third-block__container {
   display: flex;
@@ -199,6 +211,7 @@ ul {
 }
 .main .main-third-block .third-block__container .main__article .main__link {
   text-decoration: none;
+  cursor: pointer;
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 30px;
@@ -311,7 +324,6 @@ ul {
 .main .main-eighth-block,
 .main .main-ninth-block {
   position: relative;
-  top: 455px;
 }
 .main .main-fourth-block {
   left: -55px;
@@ -382,6 +394,7 @@ ul {
 }
 .main .main-fifth-block .fifth-wrap .fifth-block__link {
   text-decoration: underline;
+  cursor: pointer;
 }
 .main .main__text,
 .main .fifth-block__text,
@@ -533,7 +546,6 @@ ul {
 
 .footer {
   position: relative;
-  top: 450px;
   overflow: hidden;
   background-color: #eee;
 }
@@ -619,6 +631,7 @@ ul {
   padding-bottom: 15px;
 }
 .footer .footer__section .footer__container--spec .nav__menu .nav__menu__item .nav__link {
+  cursor: pointer;
   font-size: 0.9375rem;
   font-weight: 400;
   line-height: 15px;
@@ -635,13 +648,4 @@ ul {
 }
 .footer .footer__section .footer__container--spec .nav__menu--add {
   padding: 21px 20px 0 34px;
-}
-
-@font-face {
-  font-family: "Graphik LC Web";
-  src: url("GraphikLCWeb-Medium.eot");
-  src: url("GraphikLCWeb-Medium.eot?#iefix") format("embedded-opentype"), url("GraphikLCWeb-Medium.woff2") format("woff2"), url("GraphikLCWeb-Medium.woff") format("woff"), url("GraphikLCWeb-Medium.ttf") format("truetype"), url("GraphikLCWeb-Medium.svg#GraphikLCWeb-Medium") format("svg");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
 }/*# sourceMappingURL=style.css.map */

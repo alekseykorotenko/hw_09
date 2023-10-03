@@ -25,12 +25,14 @@
 .eighth-block__button,
 .ninth-block__button {
   color: $main-color;
+  cursor: pointer;
 }
 
 // Main
 
 .main {
   padding: 97px 55px 0;
+  overflow: hidden;
   .main-first-block {
     display: flex;
 
@@ -91,7 +93,8 @@
   }
 
   .main-third-block {
-    @include position(relative, 455px);
+    margin-top: 450px;
+    // @include position(relative, 455px);
 
     .third-block__container {
       display: flex;
@@ -116,6 +119,7 @@
 
         .main__link {
           text-decoration: none;
+          cursor: pointer;
           @include font(1.25rem, 600, 30px);
           &:hover {
             text-decoration: underline;
@@ -255,7 +259,7 @@
   .main-seventh-block,
   .main-eighth-block,
   .main-ninth-block {
-    @include position(relative, 455px);
+    position: relative;
   }
 
   .main-fourth-block {
@@ -331,6 +335,7 @@
 
       .fifth-block__link {
         text-decoration: underline;
+        cursor: pointer;
       }
     }
   }

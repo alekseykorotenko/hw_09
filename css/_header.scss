@@ -3,6 +3,7 @@
 .header {
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
   align-items: center;
   border-bottom: 1px solid #ccc;
 
@@ -36,6 +37,7 @@
 
       &__link {
         color: $additional-color;
+        cursor: pointer;
       }
     }
   }
@@ -43,10 +45,12 @@
 .buttons-wrap {
   display: flex;
   // width: 270px;
+  // cursor: pointer;
   justify-content: space-between;
   padding: 25px 51px;
   .button {
     background-color: $main-color;
+    cursor: pointer;
     line-height: 45px;
     font-size: 1rem;
     font-weight: 600;

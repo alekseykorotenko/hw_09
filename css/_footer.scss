@@ -6,7 +6,7 @@
 
 .footer {
   position: relative;
-  top: 450px;
+  // top: 450px;
   overflow: hidden;
   background-color: #eee;
 
@@ -94,6 +94,7 @@
           padding-bottom: 15px;
 
           .nav__link {
+            cursor: pointer;
             @include font(0.9375rem, 400, 15px);
             &:hover {
               text-decoration: underline;
