@@ -31,30 +31,31 @@
 // Main
 
 .main {
-  padding: 97px 55px 0;
+  margin: 0 auto;
+  padding: 97px 4% 0;
   overflow: hidden;
   .main-first-block {
     display: flex;
 
     .main-first__title {
       @include font(4.0625rem, 600, 70px);
-      padding: 32px 0 51px 20px;
+      padding: 32px 0 51px 1.5%;
     }
 
     .content-about {
-      padding: 0 68px 51px 20px;
+      padding: 0 5% 51px 1.5%;
       @include font(1.5625rem, 400, 35px);
     }
 
     .main-first__picture {
-      width: 759px;
-      padding: 54px 12px 182px 0;
+      width: 53%;
+      padding: 54px 1% 182px 0;
     }
   }
   .buttons-wrap {
     justify-content: flex-start;
-    padding-left: 10px;
-    padding-bottom: 25px;
+    padding-left: 1%;
+    padding-bottom: 2%;
   }
 
   .sixth-block__text,
@@ -65,17 +66,17 @@
 
   .content-warn {
     display: block;
-    padding: 0 0 172px 20px;
+    padding: 0 0 172px 2%;
   }
 
   .main-second-block {
     position: absolute;
-    width: 100vw;
+    width: 100%;
     left: 0;
     text-align: center;
 
     .main__title {
-      padding: 108px 250px 70px 360px;
+      padding: 108px 19% 70px 27%;
     }
 
     .main-second-img {
@@ -94,16 +95,15 @@
 
   .main-third-block {
     margin-top: 450px;
-    // @include position(relative, 455px);
 
     .third-block__container {
       display: flex;
       align-items: center;
-      padding: 125px 20px;
+      padding: 125px 2%;
 
       .main__article {
         order: 1;
-        padding-right: 165px;
+        padding-right: 13%;
 
         .main__title {
           padding-bottom: 30px;
@@ -113,6 +113,7 @@
           padding-bottom: 30px;
 
           .article__span {
+            font-weight: 400;
             text-decoration: underline;
           }
         }
@@ -129,17 +130,18 @@
       }
 
       .article__img {
-        width: 632px;
+        width: 44%;
         order: 2;
-
-        .third-block__img {
-          width: 632px;
-        }
       }
 
       .main__article--mod {
         order: 2;
-        padding-left: 138px;
+        padding-left: 11%;
+
+        .article__link {
+          text-decoration: none;
+          color: $additional-color;
+        }
       }
 
       .article__img--mod {
@@ -151,18 +153,18 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 2326.6px;
+        width: 161.5%;
         height: 577px;
 
         .wrap-content {
-          width: 500px;
-          height: 260px;
+          width: 83%;
+          height: 300px;
           background-color: $main-color;
 
           .container__variable {
             display: inline-block;
             color: $variable-color;
-            padding: 37px 10px 30px 37px;
+            padding: 37px 2% 30px 6%;
           }
 
           .container__variable-spec {
@@ -179,12 +181,12 @@
           }
 
           .container__variable--chan {
-            padding: 0 0 0 69px;
+            padding: 0 0 0 11%;
           }
 
           .container__symbols {
             color: $symbols-color;
-            padding-right: 8px;
+            padding-right: 1%;
           }
 
           .container__symbols--spec {
@@ -192,30 +194,30 @@
           }
 
           .container__symbols--mod {
-            padding-right: 63px;
+            padding-right: 10%;
           }
 
           .container__symbols--add {
-            padding-right: 167px;
+            padding-right: 28%;
           }
 
           .container__symbols--chan {
-            padding-right: 343px;
+            padding-right: 57%;
           }
 
           .container__symbols--conv {
-            padding-left: 69px;
-            padding-right: 423px;
+            padding-left: 11%;
+            padding-right: 70%;
           }
 
           .container__symbols--trans {
-            padding-right: 247px;
-            padding-left: 8px;
+            padding-right: 41%;
+            padding-left: 1%;
           }
 
           .container__way {
             color: $way-color;
-            padding-right: 30px;
+            padding-right: 5%;
           }
 
           .container__way--mod,
@@ -232,13 +234,13 @@
           }
 
           .container__format--spec {
-            padding-left: 101px;
-            padding-right: 8px;
+            padding-left: 17%;
+            padding-right: 1%;
           }
 
           .container__symbols--switch {
-            padding-left: 37px;
-            padding-bottom: 23px;
+            padding-left: 15%;
+            padding-bottom: 4%;
           }
         }
       }
@@ -263,12 +265,12 @@
   }
 
   .main-fourth-block {
-    left: -55px;
-    width: 100vw;
+    left: -60px;
+    width: 109%;
     text-align: center;
 
     .main-fourth__title {
-      padding: 120px 220px 79px;
+      padding: 120px 17% 79px;
     }
 
     .fourth-wrap {
@@ -277,10 +279,10 @@
       align-items: center;
 
       .fourth-block__container {
-        width: 330px;
+        width: 25%;
 
         .fourth-block__img {
-          padding: 0 85px 26px;
+          padding: 0 28% 26px;
         }
 
         .fourth-block__title {
@@ -304,7 +306,11 @@
     padding-bottom: 217px;
 
     .main-fifth__title {
-      padding: 154px 23px 0px 20px;
+      padding: 154px 2% 0px;
+    }
+
+    .main__link {
+      text-decoration: underline;
     }
 
     .fifth-wrap {
@@ -329,7 +335,7 @@
       }
 
       .fifth-block__text {
-        padding-right: 31px;
+        padding-right: 7%;
         padding-bottom: 25px;
       }
 
@@ -349,36 +355,36 @@
 
   .main-sixth-block {
     display: flex;
-    width: 100vw;
+    width: 109%;
     background-color: #c9e8f2;
-    left: -55px;
+    left: -60px;
 
     .sixth-block__article {
-      padding: 63px 60px 23px 75px;
+      padding: 63px 4% 23px 5%;
       @include font(1.875rem, 400, 40px);
     }
 
     .sixth-block__text {
-      padding: 0 709px 7px 75px;
+      padding: 0 49% 7px 5%;
     }
 
     .sixth-block__article-img {
-      padding: 0 865px 165px 75px;
+      padding: 0 60% 165px 5%;
     }
   }
   .sixth-block__container--spec {
-    padding: 53px 75px 105px 0;
+    padding: 53px 5% 105px 0;
 
     .sixth-block__img {
-      width: 310px;
+      width: 100%;
     }
   }
 
   .main-seventh-block {
     display: flex;
     justify-content: space-between;
-    left: -55px;
-    width: 100vw;
+    left: -60px;
+    width: 109%;
     background-color: #dabc98;
 
     .seventh-block__container {
@@ -386,23 +392,23 @@
       align-items: center;
 
       .seventh-block__img {
-        padding: 90px 67px 88px 54px;
+        padding: 90px 5% 88px 4%;
       }
 
       .seventh-block__text {
         @include font(2.1875rem, 600, 50px);
-        padding: 47px 125px 31px 0;
+        padding: 47px 9% 31px 0;
         border-right: 1px solid $additional-color;
       }
     }
 
     .seventh-block__container--spec {
-      padding: 110px 138px 106px 71px;
+      padding: 110px 10% 106px 5%;
     }
     .seventh-block__rating {
       display: flex;
       flex-direction: column;
-      padding-right: 70px;
+      padding-right: 5%;
 
       .seventh-block__logo {
         padding-bottom: 20px;
@@ -432,20 +438,20 @@
 
     .eighth-block__title {
       text-align: center;
-      padding: 169px 250px 0;
+      padding: 169px 20% 0;
     }
 
     .eighth-block__text {
       @include font(1.5625rem, 400, 30px);
       text-align: center;
-      width: 539px;
+      width: 37%;
     }
 
     .eighth-block__img-container {
-      padding: 25px 134px 32px;
+      padding: 25px 12% 32px;
 
       .eighth-block__img {
-        width: 1023px;
+        width: 100%;
         border: 2px solid #c9e8f2;
       }
     }
@@ -454,7 +460,7 @@
       @include font(1rem, 600, 60px);
       text-align: center;
       background-color: $special-color;
-      padding: 0 20px;
+      padding: 0 2%;
     }
 
     .eighth-block__button:hover {
@@ -468,24 +474,24 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    left: -55px;
-    width: 100vw;
+    left: -60px;
+    width: 109%;
     text-align: center;
     padding-bottom: 161px;
 
     .ninth-block__title {
-      padding: 119px 328px 29px;
+      padding: 119px 23% 29px;
     }
 
     .ninth-block__text {
-      padding: 0 501px 54px;
+      padding: 0 35% 54px;
     }
 
     .ninth-block__button {
       @include font(1.0625rem, 600, 60px);
       text-align: center;
       background-color: $additional-color;
-      padding: 0 40px;
+      padding: 0 3%;
     }
 
     .ninth-block__button:hover {

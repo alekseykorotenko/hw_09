@@ -6,14 +6,13 @@
 
 .footer {
   position: relative;
-  // top: 450px;
   overflow: hidden;
   background-color: #eee;
 
   .footer__section {
     display: flex;
     flex-direction: column;
-    padding: 92px 75px 0;
+    padding: 92px 5% 0;
 
     .footer__block {
       display: flex;
@@ -21,7 +20,8 @@
       border-bottom: 1px solid $additional-color;
 
       .footer__container {
-        padding-right: 70px;
+        padding-right: 5%;
+        width: 30%;
 
         .footer__title {
           @include font(2.5rem, 600, 50px);
@@ -38,7 +38,7 @@
         }
         .footer__container__text {
           @include font(1.25rem, 400, 30px);
-          width: 290px;
+          width: 50%;
           padding: 11px 0 15px;
         }
         .footer__container__button {
@@ -52,6 +52,11 @@
           }
         }
       }
+      .footer__container--spec {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+      }
     }
 
     .footer__block--spec {
@@ -62,15 +67,26 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        padding: 53px 700px 43px 0;
+        width: 100%;
+        padding: 53px 49% 43px 0;
 
         .footer__block__logo {
-          padding-right: 14px;
+          padding-right: 1%;
         }
 
-        .footer__block__text {
-          @include font(0.75rem, 400, 15px);
-          width: 301px;
+        .footer__block__container__text {
+          .footer__block__text--mod {
+            @include font(0.75rem, 400, 15px);
+            // display: inline-block;
+            width: 500%;
+          }
+
+          .footer__block__text {
+            @include font(0.75rem, 400, 15px);
+            width: 500%;
+
+            padding-left: 350px;
+          }
         }
       }
 
@@ -82,14 +98,22 @@
 
     .footer__container--spec {
       display: flex;
-      padding: 5px 20px 391px 70px;
+
+      .footer__container__nav {
+        display: flex;
+        flex-direction: column;
+      }
+
+      // .nav__title {
+      //   padding-bottom: 21px;
+      // }
 
       .nav__title--spec {
-        padding-left: 32px;
+        padding-left: 2%;
       }
 
       .nav__menu {
-        padding: 21px 75px 0 0;
+        // padding: 0 15% 0 0;
         .nav__menu__item {
           padding-bottom: 15px;
 
@@ -104,16 +128,20 @@
         }
       }
 
+      .nav__menu {
+        padding: 21px 0 0;
+      }
+
       .nav__menu--spec {
-        padding: 21px 17px 0 34px;
+        padding: 21px 1% 0 2%;
       }
 
       .nav__menu--mod {
-        padding: 21px 28px 0 34px;
+        padding: 21px 2% 0;
       }
 
       .nav__menu--add {
-        padding: 21px 20px 0 34px;
+        padding: 21px 2% 0;
       }
     }
   }
